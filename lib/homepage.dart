@@ -16,7 +16,9 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.blue,
       ),
       body: const Center(child: Text("Welcome to My Catalog App")),
-      drawer: const Drawer(),
+      drawer: const Drawer(
+        backgroundColor: Colors.blueGrey,
+      ),
     );
   }
 }

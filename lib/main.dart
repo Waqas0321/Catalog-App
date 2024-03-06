@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Center(
-      child: MaterialApp(home: HomePage()),
+      child: MaterialApp(title: "Catalog App", home: HomePage()),
     );
   }
 }
