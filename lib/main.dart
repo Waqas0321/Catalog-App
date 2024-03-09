@@ -1,3 +1,6 @@
+import 'package:catalog_app/Pages/homepage.dart';
+import 'package:catalog_app/Pages/sign_up.dart';
+import 'package:catalog_app/utils/routs.dart';
 import 'package:flutter/material.dart';
 import 'Pages/loginpage.dart';
 
@@ -13,10 +16,13 @@ class MyApp extends StatelessWidget {
     return Center(
       child: MaterialApp(
         title: "Catalog App",
-        theme: ThemeData(
-        ),
+        debugShowCheckedModeBanner: false,
+        // theme: ThemeData(),
+        initialRoute: MyRouts.loginRout,
         routes: {
-          "/": (context) => const LoginPage(),
+          MyRouts.loginRout: (context) => const LoginPage(),
+          MyRouts.homeRout: (context) => const HomePage(),
+          MyRouts.signupRout: (context) => const SignUpPage(),
         },
       ),
     );
